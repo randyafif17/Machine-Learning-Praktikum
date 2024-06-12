@@ -33,7 +33,7 @@ Perpustakaan yang diperlukan:
 - matplotlib
 - scikit-learn
 
-## Skrip Preprocessing dan Analisis Data
+## Preprocessing Data.ipynb
 Repositori ini berisi kumpulan skrip Python untuk preprocessing, analisis, dan visualisasi data pada berbagai dataset. Skrip ini menunjukkan berbagai teknik seperti pembersihan data, analisis statistik, normalisasi, regresi, dan lain-lain.
 # Isi
 1. Analisis Teks Pidato
