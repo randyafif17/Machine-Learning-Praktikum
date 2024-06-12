@@ -62,4 +62,5 @@ Kode ini merupakan implementasi dari algoritma decision tree untuk klasifikasi p
 3. Pembangunan Decision Tree: Didefinisikan beberapa fungsi untuk menghitung metrik-metrik seperti entropy, gini impurity, information gain, dan pemilihan pembelahan terbaik untuk membangun decision tree. Decision tree tersebut akan digunakan untuk melakukan klasifikasi pada data BMI.
 4. Prediksi dan Evaluasi: Dilakukan prediksi kategori obesitas berdasarkan decision tree yang telah dibangun. Selanjutnya, dilakukan evaluasi klasifikasi menggunakan metrik-metrik seperti akurasi, presisi, sensitivitas, spesifisitas, dan F1-score.
 5. Confusion Matrix: Dihitung matriks kebingungan (confusion matrix) untuk mengevaluasi kinerja model klasifikasi.
+
 Jadi, secara keseluruhan, tujuan dari kode ini adalah untuk membangun model decision tree yang dapat digunakan untuk mengklasifikasikan data BMI ke dalam kategori obes atau tidak obes, serta melakukan evaluasi kinerja model menggunakan berbagai metrik evaluasi klasifikasi.
