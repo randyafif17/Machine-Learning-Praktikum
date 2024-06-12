@@ -64,3 +64,29 @@ Kode ini merupakan implementasi dari algoritma decision tree untuk klasifikasi p
 5. Confusion Matrix: Dihitung matriks kebingungan (confusion matrix) untuk mengevaluasi kinerja model klasifikasi.
 
 Jadi, secara keseluruhan, tujuan dari kode ini adalah untuk membangun model decision tree yang dapat digunakan untuk mengklasifikasikan data BMI ke dalam kategori obes atau tidak obes, serta melakukan evaluasi kinerja model menggunakan berbagai metrik evaluasi klasifikasi.
+
+## K-Means Clustering #1
+Deskripsi:
+Bagian pertama dari proyek ini melibatkan pembuatan kelas KMeansMod, yang merupakan modifikasi dari algoritma K-Means standar. Modifikasi termasuk dalam proses inisialisasi sentroid awal, perhitungan inertia, dan beberapa metode lainnya untuk mengoptimalkan kinerja algoritma.
+
+Fungsi Utama:
+1. fit(X: np.array) -> None: Metode ini digunakan untuk melatih model K-Means menggunakan data input X.
+2. predict(X: np.array) -> np.array: Metode ini digunakan untuk memprediksi label klaster untuk setiap sampel dalam data input X.
+3. return_wcss() -> Tuple[float, np.array]: Metode ini mengembalikan nilai total within-cluster sum of squares (WCSS) dan array WCSS untuk setiap klaster.
+4. return_centroids() -> np.array: Metode ini mengembalikan array sentroid yang dihasilkan oleh model setelah proses pelatihan.
+
+Penggunaan:
+Bagian ini menunjukkan bagaimana kelas KMeansMod dapat digunakan untuk melakukan clustering pada data yang dimuat dari file Excel. Hasil clustering juga dibandingkan dengan hasil dari KMeans standar dari scikit-learn.
+
+## K-Means Clustering #2
+Deskripsi:
+Bagian kedua dari proyek ini melibatkan eksplorasi jumlah klaster yang optimal menggunakan metode "Elbow" dan Silhouette Score untuk dataset iris. Tujuannya adalah untuk memilih jumlah klaster terbaik yang dapat mewakili struktur data dengan baik.
+
+Fungsi Utama:
+1. load_iris(): Fungsi ini digunakan untuk memuat dataset iris sebagai contoh.
+2. StandardScaler(): Digunakan untuk melakukan penskalaan data sebelum diterapkan pada algoritma clustering.
+3. KMeans(n_clusters=i, max_iter=300, random_state=0): Menginisialisasi model KMeans dengan jumlah klaster yang bervariasi dari 2 hingga 10 untuk mengevaluasi inersia dan Silhouette Score.
+4. silhouette_score(data_scaled, kmeans.labels_): Menghitung Silhouette Score untuk setiap jumlah klaster yang diuji.
+
+Penggunaan:
+Bagian ini menjelaskan bagaimana menggunakan metode "Elbow" dan Silhouette Score untuk menentukan jumlah klaster optimal pada dataset iris, dan menampilkan grafik untuk masing-masing metode untuk memudahkan interpretasi.
