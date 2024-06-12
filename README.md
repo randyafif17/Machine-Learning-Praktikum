@@ -35,7 +35,7 @@ Perpustakaan yang diperlukan:
 
 ## Preprocessing Data.ipynb
 Repositori ini berisi kumpulan skrip Python untuk preprocessing, analisis, dan visualisasi data pada berbagai dataset. Skrip ini menunjukkan berbagai teknik seperti pembersihan data, analisis statistik, normalisasi, regresi, dan lain-lain.
-# Isi
+### Isi
 1. Analisis Teks Pidato
    - Direktori: Preprocessing/pidato
    - Deskripsi: Membaca file teks pidato dari direktori yang ditentukan dan menyimpan nama file serta konten dalam sebuah DataFrame. Selain itu, skrip ini mengekstrak nama kota dan tanggal dari nama file serta menghitung rasio kemunculan kata untuk beberapa kata kunci tertentu.
@@ -54,3 +54,12 @@ Repositori ini berisi kumpulan skrip Python untuk preprocessing, analisis, dan v
 6. Manipulasi dan Visualisasi Data Produksi Listrik
    - Deskripsi: Membaca dan memanipulasi data produksi listrik bulanan, serta membuat visualisasi untuk memahami distribusi dan tren data.
    - File Data: Preprocessing/Electric_Production.csv
+
+## Decision Tree.ipynb
+Kode ini merupakan implementasi dari algoritma decision tree untuk klasifikasi pada data BMI (Body Mass Index). Tujuan dari kode ini adalah sebagai berikut:
+1. Preprocessing Data: Data BMI dibaca dari file CSV dan kemudian diproses. Variabel obese ditambahkan berdasarkan indeks BMI untuk menandai apakah seseorang termasuk dalam kategori obes atau tidak. Selanjutnya, variabel indeks BMI dihapus karena tidak akan digunakan dalam pembangunan model.
+2. Perhitungan Metrik: Dilakukan perhitungan jumlah data yang salah diklasifikasikan (misclassified) ketika menggunakan batas pemotongan pada 100 kg dan 80 kg.
+3. Pembangunan Decision Tree: Didefinisikan beberapa fungsi untuk menghitung metrik-metrik seperti entropy, gini impurity, information gain, dan pemilihan pembelahan terbaik untuk membangun decision tree. Decision tree tersebut akan digunakan untuk melakukan klasifikasi pada data BMI.
+4. Prediksi dan Evaluasi: Dilakukan prediksi kategori obesitas berdasarkan decision tree yang telah dibangun. Selanjutnya, dilakukan evaluasi klasifikasi menggunakan metrik-metrik seperti akurasi, presisi, sensitivitas, spesifisitas, dan F1-score.
+5. Confusion Matrix: Dihitung matriks kebingungan (confusion matrix) untuk mengevaluasi kinerja model klasifikasi.
+Jadi, secara keseluruhan, tujuan dari kode ini adalah untuk membangun model decision tree yang dapat digunakan untuk mengklasifikasikan data BMI ke dalam kategori obes atau tidak obes, serta melakukan evaluasi kinerja model menggunakan berbagai metrik evaluasi klasifikasi.
